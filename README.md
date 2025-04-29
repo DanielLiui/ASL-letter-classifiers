@@ -16,11 +16,11 @@ ResNet50    |         81%          |    not obtained
 
 
 ## Custom Keras CNN 
-###Data preprocessing
+### Data preprocessing
 - 200 x 200 images are read as matrices of pixel values, converted to grayscale, and normalized to a range of [0,1].
 - Labels are 1-hot encoded. 
 
-Architecture:
+### Architecture
 - Convolution layer (filters=32, size=3, ReLu activation); max pooling layer (size 2); drop-out layer (rate=0.2)
 - Convolution layer (filters=64, size=3, ReLu activation); max pooling layer (size 2); drop-out layer (rate=0.3)
 - Convolution layer (filters=64, size=3), ReLu activation; max pooling layer (size 2); drop-out layer (rate=0.3)
@@ -29,11 +29,11 @@ Architecture:
 
 
 ## MobileNetV2 
-###Data preprocessing
+### Data preprocessing
 - 200 x 200 images are read as matrices of RGB pixel values, resized to 50 x 50, and normalized to a range of [0,1].
 - Images are RGB since MobileNetV2 was trained on RGB images. 50 x 50 image size was chosen since it is the optimal image size that is both minimally small for more efficient training and yields high classification accuracy.
 
-###Architecture
+### Architecture
 - Pretrained weights with a bit of fine-tuning for the last layers
 
 
