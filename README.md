@@ -8,11 +8,11 @@ https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release/
 
 Model performances:
 
-Model       |  Validation accuracy   Test accuracy
-------------|------------------------------------------
-Custom CNN  |         98%                98%
-MobileNetV2 |         99%                99%
-ResNet50    |         81%            not obtained
+Model       |  Validation accuracy |    Test accuracy
+------------|----------------------|----------------------
+Custom CNN  |         98%          |        98%
+MobileNetV2 |         99%          |        99%
+ResNet50    |         81%          |    not obtained
 
 
 # Custom Keras CNN 
