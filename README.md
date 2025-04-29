@@ -62,8 +62,10 @@ folders named 'A', 'B', ... 'Z' that contains hand sign images of each letter.
 preprocess_images("dir_name", "X_numpy_output_name", "y_numpy_output_name", n_images_per_letter, img_size) 
 ```
 to save the input images and output labels as numpy arrays called <X_numpy_output_name>.npy and <y_numpy_output_name>.npy. <br>
-- n_images_per_letter is the number of images from the start of each letter folder to use.
-- img_size will be the resized width and height of each image.
+- n_images_per_letter - the number of images from the start of each letter folder to use
+- img_size - the resized width and height of each image
+
+There are also other preprocessing functions available.
 
 <br>
  
