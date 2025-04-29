@@ -45,7 +45,9 @@ ResNet50    |         81%          |    not obtained
 Can install program packages by activating virtual environment however that is done in in your IDE. 
 
 If you want to install packages on your local device, run:
+```
 > pip install -r requirements.txt
+```
 
 <br>
 
@@ -55,7 +57,12 @@ If you want to install packages on your local device, run:
 2. Move the 'train' folder that contains training images into your project. There is also a 'test' folder that contains test images, but the test set is very small so it is not needed. Each folder contains
 folders named 'A', 'B', ... to 'Z' that contains hand sign images of each letter.
 
-3. In preprocess.py, call preprocess_images(dir_name, X_numpy_output_name, y_numpy_output_name, n_images_per_letter, img_size) to save the input images and output labels as numpy arrays called <X_numpy_output_name>.npy and <y_numpy_output_name>.npy. n_images_per_letter is the number of images from the start of each letter folder to use.
+3. In preprocess.py, call
+```
+preprocess_images(dir_name, X_numpy_output_name, y_numpy_output_name, n_images_per_letter, img_size) 
+```
+to save the input images and output labels as numpy arrays called <X_numpy_output_name>.npy and <y_numpy_output_name>.npy. 
+n_images_per_letter is the number of images from the start of each letter folder to use.
 
 <br>
  
@@ -63,5 +70,5 @@ folders named 'A', 'B', ... to 'Z' that contains hand sign images of each letter
 - Trained models are already saved at asl_cnn.keras and mobileNetV2.keras. You can load and test them how you like.
 - The model training files are keras_CNN.py, mobileNetV2.py, and resnet.py. The main training functions are located near the bottom of the model training files, while the helper files are above.
 
-[!WARNING]
-You can run the functions how you like, but make sure in preprocess_images() to EDIT THE NAMES OF THE NUMPY FILES saved from preprocess.py.
+> [!WARNING]
+> You can run the functions how you like, but make sure in preprocess_images() to EDIT THE NAMES OF THE NUMPY FILES saved from preprocess.py.
