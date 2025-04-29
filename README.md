@@ -1,4 +1,4 @@
-# 99% accuracy MobileNetV2 and 98 % accuracy CNN for classifying letters of ASL hand sign images
+# 99% accurate MobileNetV2 and 98% accurate custom CNN for classifying letters of ASL hand sign images
 Authors: Lily Czarnecki, Arthur Dao, Daniel Liu
 
 This repository contains code for training a custom keras CNN, a MobileNetV2, and a ResNet50 for classifying letters of ASL hand sign images. The models are also available for download. 
