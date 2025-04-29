@@ -6,7 +6,7 @@ This repository contains code for training a custom keras CNN, a MobileNetV2, an
 Dataset:
 https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release/
 
-Model performances for a 70-15-15% train-validation-test split:
+Model performances for a train-validation-test split of 70-15-15%:
 
 Model       |  Validation accuracy |    Test accuracy
 ------------|----------------------|----------------------
