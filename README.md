@@ -6,7 +6,7 @@ This repository contains code for training a custom keras CNN, a MobileNetV2, an
 Dataset:
 https://cirl.lcsr.jhu.edu/research/hmm/datasets/jigsaws_release/
 
-Model performances:
+Model performances for a 70-15-15% train-validation-test split:
 
 Model       |  Validation accuracy |    Test accuracy
 ------------|----------------------|----------------------
@@ -47,6 +47,7 @@ Can install program packages by activating virtual environment however that is d
 If you want to install packages on your local device, run:
 > pip install -r requirements.txt
 
+<br>
 
 ### Installing dataset
 1. Download the ASL Alphabet dataset here: https://www.kaggle.com/datasets/grassknoted/asl-alphabet
@@ -56,7 +57,11 @@ folders named 'A', 'B', ... to 'Z' that contains hand sign images of each letter
 
 3. In preprocess.py, call preprocess_images(dir_name, X_numpy_output_name, y_numpy_output_name, n_images_per_letter, img_size) to save the input images and output labels as numpy arrays called <X_numpy_output_name>.npy and <y_numpy_output_name>.npy. n_images_per_letter is the number of images from the start of each letter folder to use.
 
+<br>
  
 ### Running the models
 - Trained models are already saved at asl_cnn.keras and mobileNetV2.keras. You can load and test them how you like.
-- The model training files are keras_CNN.py, mobileNetV2.py, and resnet.py. The main training functions are located near the bottom of the model training files, while the helper files are above. You can run the functions how you like, but make sure in preprocess_images() to EDIT THE NAMES OF THE NUMPY FILES saved from preprocess.py.
+- The model training files are keras_CNN.py, mobileNetV2.py, and resnet.py. The main training functions are located near the bottom of the model training files, while the helper files are above.
+
+[!WARNING]
+You can run the functions how you like, but make sure in preprocess_images() to EDIT THE NAMES OF THE NUMPY FILES saved from preprocess.py.
