@@ -16,7 +16,7 @@ ResNet50    |         81%          |    not obtained
 
 <br>
 
-## Custom Keras CNN 
+## Custom Keras CNN 🕸️
 ### Data preprocessing
 - 200 x 200 images are read as matrices of pixel values, converted to grayscale, and normalized to a range of [0,1].
 - Labels are 1-hot encoded. 
@@ -30,7 +30,7 @@ ResNet50    |         81%          |    not obtained
 
 <br>
 
-## MobileNetV2 
+## MobileNetV2 📱
 ### Data preprocessing
 - 200 x 200 images are read as matrices of RGB pixel values, resized to 50 x 50, and normalized to a range of [0,1].
 - Images are RGB since MobileNetV2 was trained on RGB images. 50 x 50 image size was chosen since it is the optimal image size that is both minimally small for more efficient training and yields high classification accuracy.
@@ -40,7 +40,7 @@ ResNet50    |         81%          |    not obtained
 
 <br>
 
-## How to run
+## How to run 🏃‍♂️‍➡️
 ### Installing packages
 Can install program packages by activating virtual environment however that is done in in your IDE. 
 
@@ -62,8 +62,8 @@ folders named 'A', 'B', ... 'Z' that contains hand sign images of each letter.
 preprocess_images("dir_name", "X_numpy_output_name", "y_numpy_output_name", n_images_per_letter, img_size) 
 ```
 This function saves the input images and output labels as numpy arrays called <X_numpy_output_name>.npy and <y_numpy_output_name>.npy. <br>
-- n_images_per_letter  —  the number of images from the start of each letter folder to use
-- img_size  —  the resized width and height of each image
+- **n_images_per_letter**  —  the number of images from the start of each letter folder to use
+- **img_size**  —  the resized width and height of each image
 
 There are also other preprocessing functions available.
 
