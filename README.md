@@ -14,6 +14,7 @@ Custom CNN  |         98%          |        98%
 MobileNetV2 |         99%          |        99%
 ResNet50    |         81%          |    not obtained
 
+<br>
 
 ## Custom Keras CNN 
 ### Data preprocessing
@@ -27,6 +28,7 @@ ResNet50    |         81%          |    not obtained
 - Dense layer (filters = 128, ReLu activation); drop-out layer (rate = 0.4)
 - Output layer (output of 26 classes, softmax activation)
 
+<br>
 
 ## MobileNetV2 
 ### Data preprocessing
@@ -36,6 +38,7 @@ ResNet50    |         81%          |    not obtained
 ### Architecture
 - Pretrained weights with a bit of fine-tuning for the last layers
 
+<br>
 
 ## How to run
 ### Installing packages
