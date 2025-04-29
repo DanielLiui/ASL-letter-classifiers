@@ -36,7 +36,7 @@ ResNet50    |         81%          |    not obtained
 - Images are RGB since MobileNetV2 was trained on RGB images. 50 x 50 image size was chosen since it is the optimal image size that is both minimally small for more efficient training and yields high classification accuracy.
 
 ### Architecture
-- Pretrained weights with a bit of fine-tuning for the last layers
+- Pretrained weights with a bit of fine-tuning for the last layers.
 
 <br>
 
